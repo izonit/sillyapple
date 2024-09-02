@@ -11,6 +11,5 @@ export class ErrorListener extends Listener {
 
   async run() {
     console.log(colors.red(`[Listener Error] ${this.container.constructor.name}`)); 
-  
   }
 }
