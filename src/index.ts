@@ -21,8 +21,8 @@ export const client = new SapphireClient({
         },
       ],
 
-      status: 'idle',
-    },
+    status: 'idle',
+  },
 
   loadMessageCommandListeners: true,
   defaultPrefix: defaultPrefix,
