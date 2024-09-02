@@ -1,5 +1,5 @@
 import { Command } from '@sapphire/framework';
-import { EmbedBuilder, type Message } from 'discord.js';
+import { EmbedBuilder, ThreadMemberFlagsBitField, type Message } from 'discord.js';
 import { defaultPrefix } from '../../../config.json'
 
 export class InfoCommand extends Command {
@@ -28,7 +28,7 @@ export class InfoCommand extends Command {
     const embed = new EmbedBuilder()
       .setColor(0x0099ff)
       .setTitle('Silly Apple')
-      .setDescription('Bot information.')
+      .setDescription('### Bot information.')
       .addFields(
         { name: 'Version', value: '1.1 | Beta test | indev', inline: false },
         { name: 'Author', value: '.izonit2', inline: false },
@@ -37,6 +37,7 @@ export class InfoCommand extends Command {
         { name: 'Framework', value: '[@sapphire/framework](https://github.com/sapphiredev/framework/)', inline: true },
         { name: 'Node version', value: `${process.version}`, inline: true },
         { name: 'Language' , value: 'TypeScript', inline: true },
+        { name: 'GitHub repository', value: '[\*click*](https://github.com/izonit/sillyapple)', inline: false },
         { name: 'Prefix', value: `\`${defaultPrefix}\``, inline: false },  
       )
       .setTimestamp()
@@ -52,7 +53,7 @@ export class InfoCommand extends Command {
     const embed = new EmbedBuilder()
       .setColor(0x0099ff)
       .setTitle('Silly Apple')
-      .setDescription('Bot information.')
+      .setDescription('### Bot information.')
       .addFields(
         { name: 'Version', value: '1.1 | Beta test | indev', inline: false },
         { name: 'Author', value: '.izonit2', inline: false },
@@ -61,6 +62,7 @@ export class InfoCommand extends Command {
         { name: 'Framework', value: '[@sapphire/framework](https://github.com/sapphiredev/framework/)', inline: true },
         { name: 'Node version', value: `${process.version}`, inline: true },
         { name: 'Language' , value: 'TypeScript', inline: true },
+        { name: 'GitHub repository', value: '[\*click*](https://github.com/izonit/sillyapple)', inline: false },
         { name: 'Prefix', value: `\`${defaultPrefix}\``, inline: false },  
       )
       .setTimestamp()
