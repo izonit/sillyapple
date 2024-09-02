@@ -4,7 +4,7 @@
 
 # Silly Apple
 
-A brief description of the bot and what it does.
+A brief description of the Discord bot and what it does.
 
 </div>
 <br />
@@ -16,6 +16,7 @@ A brief description of the bot and what it does.
 ## Purpose
 - Making fun in a private server of my friend.
 - A purposeful project to learn TypeScript, and the Sapphire framework.
+- A project to fight with boredom.
 
 ## TODO
 - **A help command.** (as well as many others)
