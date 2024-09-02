@@ -1,0 +1,8 @@
+# Black hole
+/node_modules
+
+# OS-generated files
+.DS_Store
+
+# Project secrets
+config.json
