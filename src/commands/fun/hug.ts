@@ -7,7 +7,7 @@ export class HugCommand extends Command {
       ...options,
       name: 'hug',
       description: 'Hug someone',
-      aliases: ['hugs']
+      aliases: ['Hug', 'hugs']
     });
   }
 

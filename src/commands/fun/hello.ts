@@ -7,7 +7,7 @@ export class HelloCommand extends Command {
       ...options,
       name: 'hello',
       description: 'Say hello',
-      aliases: ['hi', 'greet'],
+      aliases: ['Hello', 'hi', 'greet'],
     });
   }
 

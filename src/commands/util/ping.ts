@@ -9,7 +9,7 @@ export class PingCommand extends Command {
       ...options,
       name: 'ping',
       description: 'Ping-pong',
-      aliases: ['pong']
+      aliases: ['pong', 'Ping']
     });
   }
 

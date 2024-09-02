@@ -1,6 +1,6 @@
 {
   "name": "sillyapple",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "Learning bot",
   "main": "src/index.ts",
   "scripts": {
@@ -11,12 +11,15 @@
   "dependencies": {
     "@sapphire/discord.js-utilities": "^7.3.0",
     "@sapphire/framework": "^5.2.1",
+    "@sapphire/plugin-logger": "^4.0.2",
     "axios": "^1.7.7",
     "colors": "^1.4.0",
     "discord.js": "^14.15.3",
-    "dotenv": "^16.4.5"
+    "dotenv": "^16.4.5",
+    "yarn": "^1.22.22"
   },
   "devDependencies": {
     "tsx": "^4.19.0"
-  }
+  },
+  "repository": "https://github.com/izonit/sillyapple.git"
 }

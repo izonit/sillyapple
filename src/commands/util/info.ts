@@ -8,7 +8,7 @@ export class InfoCommand extends Command {
       ...options,
       name: 'info',
       description: 'Information about the bot',
-      aliases: ['botinfo'],
+      aliases: ['botinfo', 'Info'],
     })
   }
 

@@ -8,7 +8,7 @@ export class CoinflipCommand extends Command {
       ...options,
       name: 'coinflip',
       description: 'Flip a coin',
-      aliases: ['flip']
+      aliases: ['Coinflip', 'flip', 'Flip']
     });
   }
 

@@ -245,6 +245,14 @@
     "@sapphire/utilities" "^3.16.2"
     tslib "^2.6.3"
 
+"@sapphire/plugin-logger@^4.0.2":
+  version "4.0.2"
+  resolved "https://registry.yarnpkg.com/@sapphire/plugin-logger/-/plugin-logger-4.0.2.tgz#e9422906a4d429bf687d677f24765a52243a1f91"
+  integrity sha512-5Nr++u+fA3/jZwj1aL9Z16RgyJZRE1gyUftfWjrzdndE5FkcbnLiVCKvnI8WzSupVhdn6kMaCWAteOSgAaq3lQ==
+  dependencies:
+    "@sapphire/timestamp" "^1.0.3"
+    colorette "^2.0.20"
+
 "@sapphire/ratelimits@^2.4.9":
   version "2.4.9"
   resolved "https://registry.yarnpkg.com/@sapphire/ratelimits/-/ratelimits-2.4.9.tgz#834d3cc0bab063b59e5eaaa16c05c2b655dd5d92"
@@ -274,6 +282,11 @@
   integrity sha512-FrR1GnaEIuXpEfnaz7DjNgoN/Cp8dJ5XFgb8CxXTCAJi8LYk0YsyGSdmmcs9R3ZNZrA1vOSv0dFVLitgiVA36Q==
   dependencies:
     tslib "^2.6.2"
+
+"@sapphire/timestamp@^1.0.3":
+  version "1.0.3"
+  resolved "https://registry.yarnpkg.com/@sapphire/timestamp/-/timestamp-1.0.3.tgz#dad55aaa54cc5b22e5952dd8cb8d6c182f2a12fd"
+  integrity sha512-I2TwqlLDA2Uu576VUgyBaT1gP1WSWPxeW3NqFxsSJfwFyvzXkTzyQiYce0eWMpM6BdBCq7Dddg+Yayls/5K1RA==
 
 "@sapphire/utilities@^3.15.3", "@sapphire/utilities@^3.16.2":
   version "3.17.0"
@@ -312,6 +325,11 @@ axios@^1.7.7:
     follow-redirects "^1.15.6"
     form-data "^4.0.0"
     proxy-from-env "^1.1.0"
+
+colorette@^2.0.20:
+  version "2.0.20"
+  resolved "https://registry.yarnpkg.com/colorette/-/colorette-2.0.20.tgz#9eb793e6833067f7235902fcd3b09917a000a95a"
+  integrity sha512-IfEDxwoWIjkeXL1eXcDiow4UbKjhLdq6/EuSVR9GMN7KVH3r9gQ83e73hsz1Nd1T3ijd5xv1wcWRYO+D6kCI2w==
 
 colors@^1.4.0:
   version "1.4.0"
@@ -500,3 +518,8 @@ ws@^8.16.0:
   version "8.18.0"
   resolved "https://registry.yarnpkg.com/ws/-/ws-8.18.0.tgz#0d7505a6eafe2b0e712d232b42279f53bc289bbc"
   integrity sha512-8VbfWfHLbbwu3+N6OKsOMpBdT4kXPDDB9cJk2bJ6mh9ucxdlnNvH1e+roYkKmN9Nxw2yjz7VzeO9oOz2zJ04Pw==
+
+yarn@^1.22.22:
+  version "1.22.22"
+  resolved "https://registry.yarnpkg.com/yarn/-/yarn-1.22.22.tgz#ac34549e6aa8e7ead463a7407e1c7390f61a6610"
+  integrity sha512-prL3kGtyG7o9Z9Sv8IPfBNrWTDmXB4Qbes8A9rEzt6wkJV8mUvoirjU0Mp3GGAU06Y0XQyA3/2/RQFVuK7MTfg==

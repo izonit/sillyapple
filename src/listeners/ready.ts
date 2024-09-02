@@ -1,5 +1,4 @@
 import { Listener } from "@sapphire/framework";
-import colors from 'colors';
 
 export class ReadyListener extends Listener {
   constructor(context, options) {
@@ -12,9 +11,9 @@ export class ReadyListener extends Listener {
 
   async run() {
     if (this.container.client && this.container.client.user) {
-      await new Promise(resolve => setTimeout(resolve, 650));
+      await new Promise(resolve => setTimeout(resolve, 1250));
       // ^ Made because sometimes the message is sent inbetween application registry logs 
-      console.log(colors.green(`Logged in as ${this.container.client.user.tag}!`));
+      console.log(this.container.logger.info(`Successfully logged in as ${this.container.client.user.tag}.`));
     }
   }
 }

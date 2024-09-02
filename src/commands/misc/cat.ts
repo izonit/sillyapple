@@ -7,7 +7,7 @@ export class CatCommand extends Command {
       ...options,
       name: "cat",
       description: "Sends a random cat image",
-      aliases: ["cats", "pet"],
+      aliases: ['Cat', "cats", "pet"],
     });
   }
 

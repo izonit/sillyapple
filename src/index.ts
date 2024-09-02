@@ -1,6 +1,7 @@
-import { SapphireClient, ApplicationCommandRegistries, RegisterBehavior } from '@sapphire/framework';
+import { SapphireClient, ApplicationCommandRegistries, RegisterBehavior, LogLevel } from '@sapphire/framework';
 import { GatewayIntentBits } from 'discord.js';
 import { token, defaultPrefix } from '../config.json';
+import '@sapphire/plugin-logger/register'; // ~ Logger
 
 export const client = new SapphireClient({
   intents: [
@@ -22,6 +23,10 @@ export const client = new SapphireClient({
       ],
 
     status: 'idle',
+  },
+
+  logger: {
+    level: LogLevel.Debug
   },
 
   loadMessageCommandListeners: true,

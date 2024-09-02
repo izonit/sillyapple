@@ -6,6 +6,9 @@ export class TickleCommand extends Command {
   public constructor(context: Command.Context, options: Command.Options) {
     super(context, {
       ...options,
+      name: 'tickle',
+      description: 'Tickle someone',
+      aliases: ['Tickle', 'tickles'],
     });
   }
 
