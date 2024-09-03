@@ -1,5 +1,5 @@
 import { Command } from '@sapphire/framework';
-import { EmbedBuilder, ThreadMemberFlagsBitField, type Message } from 'discord.js';
+import { EmbedBuilder, type Message } from 'discord.js';
 import { defaultPrefix } from '../../../config.json'
 
 export class InfoCommand extends Command {
@@ -37,7 +37,7 @@ export class InfoCommand extends Command {
         { name: 'Framework', value: '[@sapphire/framework](https://github.com/sapphiredev/framework/)', inline: true },
         { name: 'Node version', value: `${process.version}`, inline: true },
         { name: 'Language' , value: 'TypeScript', inline: true },
-        { name: 'GitHub repository', value: '[\*click*](https://github.com/izonit/sillyapple)', inline: false },
+        { name: 'GitHub repository', value: '[*click*](https://github.com/izonit/sillyapple)', inline: false },
         { name: 'Prefix', value: `\`${defaultPrefix}\``, inline: false },  
       )
       .setTimestamp()
@@ -62,7 +62,7 @@ export class InfoCommand extends Command {
         { name: 'Framework', value: '[@sapphire/framework](https://github.com/sapphiredev/framework/)', inline: true },
         { name: 'Node version', value: `${process.version}`, inline: true },
         { name: 'Language' , value: 'TypeScript', inline: true },
-        { name: 'GitHub repository', value: '[\*click*](https://github.com/izonit/sillyapple)', inline: false },
+        { name: 'GitHub repository', value: '[*click*](https://github.com/izonit/sillyapple)', inline: false },
         { name: 'Prefix', value: `\`${defaultPrefix}\``, inline: false },  
       )
       .setTimestamp()

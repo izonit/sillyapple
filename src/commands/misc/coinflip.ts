@@ -1,5 +1,4 @@
 import { Command } from '@sapphire/framework';
-import { isMessageInstance } from '@sapphire/discord.js-utilities';
 import { type Message } from 'discord.js';
 
 export class CoinflipCommand extends Command {

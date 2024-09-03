@@ -6,6 +6,6 @@ export class MentionPrefixOnlyListener extends Listener {
     // message.channel.send(prefix ? `Prefix is \`${prefix}\` (whitespace included)` : `No prefix set`)
 
     message.channel.send('I am silly.')
-    message.channel.send('\<:lightmoon:1279442972739637309>')
+    message.channel.send('<:lightmoon:1279442972739637309>')
   }
 }
