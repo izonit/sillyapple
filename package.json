@@ -4,7 +4,8 @@
   "description": "Learning bot",
   "main": "src/index.ts",
   "scripts": {
-    "dev": "tsx watch src/index.ts"
+    "dev": "tsx watch src/index.ts",
+    "lint": "npx eslint"
   },
   "author": "izonit",
   "license": "Unlicense",
@@ -16,10 +17,15 @@
     "colors": "^1.4.0",
     "discord.js": "^14.15.3",
     "dotenv": "^16.4.5",
+    "typescript": "^5.5.4",
     "yarn": "^1.22.22"
   },
   "devDependencies": {
-    "tsx": "^4.19.0"
+    "@eslint/js": "^9.9.1",
+    "eslint": "^9.9.1",
+    "globals": "^15.9.0",
+    "tsx": "^4.19.0",
+    "typescript-eslint": "^8.4.0"
   },
   "repository": "https://github.com/izonit/sillyapple.git"
 }

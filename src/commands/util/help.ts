@@ -1,5 +1,5 @@
 import { Command } from '@sapphire/framework';
-import { EmbedBuilder, type Message} from 'discord.js';
+import { type Message} from 'discord.js';
 import { helpEmbed } from '../../lib/helpEmbed';
 
 export class HelpCommand extends Command {
