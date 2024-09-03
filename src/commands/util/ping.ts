@@ -30,7 +30,7 @@ export class PingCommand extends Command {
     });
     const embed = new EmbedBuilder()
       .setTitle('Pong!')
-      .setDescription(`Latency: ${msg.createdTimestamp - interaction.createdTimestamp}ms\nAPI Latency: ${Math.round(this.container.client.ws.ping)}ms`)
+      .setDescription(`**Latency**: ${msg.createdTimestamp - interaction.createdTimestamp}ms\n**API Latency**: ${Math.round(this.container.client.ws.ping)}ms.\n**Round trip took:** ${msg.createdTimestamp - interaction.createdTimestamp + this.container.client.ws.ping}ms`)
       .setColor('Green')
       .setTimestamp();
 
@@ -50,7 +50,7 @@ export class PingCommand extends Command {
     });
     const embed = new EmbedBuilder()
       .setTitle('Pong!')
-      .setDescription(`Latency: ${msg.createdTimestamp - message.createdTimestamp}ms\nAPI Latency: ${Math.round(this.container.client.ws.ping)}ms`)
+      .setDescription(`**Latency**: ${msg.createdTimestamp - message.createdTimestamp}ms\n**API Latency**: ${Math.round(this.container.client.ws.ping)}ms.\n**Round trip took:** ${msg.createdTimestamp - message.createdTimestamp + this.container.client.ws.ping}ms`)
       .setColor('Green')
       .setTimestamp();
 
