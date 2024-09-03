@@ -35,7 +35,10 @@ export class PingCommand extends Command {
       .setTimestamp();
 
     if (isMessageInstance(msg)) {
-      return interaction.editReply({ embeds: [embed] });
+      return interaction.editReply({ 
+        content: ``,
+        embeds: [embed] 
+      });
     }
   }
 
@@ -51,6 +54,9 @@ export class PingCommand extends Command {
       .setColor('Green')
       .setTimestamp();
 
-    return msg.edit({ embeds: [embed] });
+    return msg.edit({ 
+      content: ``,
+      embeds: [embed] 
+    });
   }
 }
