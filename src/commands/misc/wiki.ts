@@ -1,9 +1,9 @@
-import { Command } from '@sapphire/framework';
+import { Command, Args } from '@sapphire/framework';
 import axios from 'axios';
 import { EmbedBuilder, type Message } from 'discord.js';
 
 export class WikiCommand extends Command {
-    constructor(context: any, options: any) {
+    constructor(context: Command.Context, options: Command.Options) {
         super(context, {
             ...options,
             name: 'wiki',
@@ -12,7 +12,7 @@ export class WikiCommand extends Command {
         });
     }
 
-    async messageRun(message: Message, args: any) {
+    async messageRun(message: Message, args: Args) {
       const query = await args.rest('string').catch(() => null);
       if (!query) {
           return message.channel.send('Please provide a search term!');
