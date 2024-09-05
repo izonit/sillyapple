@@ -27,7 +27,7 @@ export class HelloCommand extends Command {
   }
 
   public override async chatInputRun(interaction: Command.ChatInputCommandInteraction) {
-    const msg = await interaction.reply({
+    await interaction.reply({
       content: `Hello, ${interaction.options.getUser('user')?.username ?? 'Unknown user'}!`,
     });
   }
@@ -37,7 +37,7 @@ export class HelloCommand extends Command {
   public override async messageRun(message: Message, args: Args) {
     const user = await args.pick('user');
     
-    const msg = await message.reply({
+    await message.reply({
       content: `Hello, ${user.username ?? 'Unknown user'}!`,
     });
   }

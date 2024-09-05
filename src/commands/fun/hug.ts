@@ -47,13 +47,12 @@ export class HugCommand extends Command {
 
   public override async messageRun(message: Message, args: Args) {
     const user = await args.pick('user');
-    const item = await args.finished ? null : await args.pick('string');
 
-    const msg = await message.reply({
+    await message.reply({
       content: `**${message.author.username}** hugged **${user.username ?? 'Unknown user'}**`
     });
-    const gif = await message.channel.send({
-      content: 'https://images-ext-1.discordapp.net/external/pzfPk7X0r5JmkBI1OFfVfOQtS6_nb-_0LNzrtnOgETo/https/cdn.weeb.sh/images/HJ7lY_QwW.gif'
-    });
+    await message.channel.send({
+      content: 'https://images-ext-1.discordapp.net/external/pzfPk7X0r5JmkBI1OFfVfOQtS6_nb-_0LNzrtnOgETo/https/cdn.weeb.sh/images/HJ7lY_QwW.gif',
+    })
   }
 }
