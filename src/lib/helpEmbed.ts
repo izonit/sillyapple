@@ -18,6 +18,7 @@ export const helpEmbed = new EmbedBuilder()
         { name: '`Ping`', value: `Get the bot ping | **Usage:** \`${defaultPrefix}ping\``, inline: false },
         { name: '`Help`', value: `Get help about the bot commands | **Usage:** \`${defaultPrefix}help\``, inline: false },
         { name: '`Info`', value: `Get the bot info | **Usage:** \`${defaultPrefix}info\``, inline: false },
+        { name: '`Wiki`', value: `Search the Wiki | **Usage:** \`${defaultPrefix}wiki <query>\``}
       )
       .setFooter({ text: 'Params in <> are required, [] are optional' })
       .setColor('Aqua')
