@@ -1,6 +1,7 @@
 import { Command } from '@sapphire/framework';
 import { type Message } from 'discord.js';
-
+import { emojis } from "../../lib/emojis.json";
+ 
 export class CoinflipCommand extends Command {
   public constructor(context: Command.Context, options: Command.Options) {
     super(context, {
@@ -25,7 +26,7 @@ export class CoinflipCommand extends Command {
     const coin = ['heads', 'tails'];
     const result = coin[Math.floor(Math.random() * coin.length)];
 
-    await interaction.reply('## Flipping the coin... <a:coinflip:1279832197800656918>');  
+    await interaction.reply(`## Flipping the coin... ${emojis.coinflip}`);  
     await new Promise(resolve => setTimeout(resolve, 2400));
     await interaction.editReply(`**${interaction.user.username}** flipped the coin and got **${result}**!`);
   }

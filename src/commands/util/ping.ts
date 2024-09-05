@@ -2,6 +2,7 @@ import { Command } from '@sapphire/framework';
 import { isMessageInstance } from '@sapphire/discord.js-utilities';
 import { EmbedBuilder, type Message } from 'discord.js';
 import { RandomLoadingMessage } from '../../lib/constants';
+import { emojis } from '../../lib/emojis.json';
 
 export class PingCommand extends Command {
   public constructor(context: Command.Context, options: Command.Options) {
@@ -25,7 +26,7 @@ export class PingCommand extends Command {
 
   public override async chatInputRun(interaction: Command.ChatInputCommandInteraction) {
     const msg = await interaction.reply({
-      content: `${RandomLoadingMessage[Math.floor(Math.random() * RandomLoadingMessage.length)]}`,
+      content: `${emojis.loading} ${RandomLoadingMessage[Math.floor(Math.random() * RandomLoadingMessage.length)]}`,
       fetchReply: true
     });
     const embed = new EmbedBuilder()
