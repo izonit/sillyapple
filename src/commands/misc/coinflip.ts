@@ -37,7 +37,7 @@ export class CoinflipCommand extends Command {
     const coin = ['heads', 'tails'];
     const result = coin[Math.floor(Math.random() * coin.length)];
 
-    const cfmessage = await message.channel.send('## Flipping the coin... <a:coinflip:1279832197800656918>');
+    const cfmessage = await message.channel.send('## *Flipping the coin... <a:coinflip:1279832197800656918>*');
     await new Promise(resolve => setTimeout(resolve, 2400));
     await cfmessage.edit(`**${message.author.username}** flipped the coin and got **${result}**!`);
   }
