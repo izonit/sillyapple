@@ -47,7 +47,7 @@ export class PingCommand extends Command {
 
   public override async messageRun(message: Message) {
     const msg = await message.reply({
-      content: `${RandomLoadingMessage[Math.floor(Math.random() * RandomLoadingMessage.length)]}`,
+      content: `${emojis.loading} ${RandomLoadingMessage[Math.floor(Math.random() * RandomLoadingMessage.length)]}`,
     });
     const embed = new EmbedBuilder()
       .setTitle('Pong!')
