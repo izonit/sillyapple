@@ -15,13 +15,13 @@ export class WikiCommand extends Command {
     async messageRun(message: Message, args: Args) {
       const query = await args.rest('string').catch(() => null);
       if (!query) {
-          return message.channel.send('Please provide a search term!');
+          return message.reply('Please provide a search term!');
       }
 
       const summary = await this.fetchWikiSummary(query);
 
       if (!summary) {
-          return message.channel.send('No Wikipedia page found for this search term.');
+          return message.reply('No Wikipedia page found for this search term.');
       }
 
       const embed = new EmbedBuilder()
@@ -32,7 +32,7 @@ export class WikiCommand extends Command {
           .setThumbnail('https://upload.wikimedia.org/wikipedia/commons/6/63/Wikipedia-logo.png')
           .setTimestamp();
 
-      await message.channel.send({ embeds: [embed] });
+      await message.reply({ embeds: [embed] });
   }
 
   public override async registerApplicationCommands(registry: Command.Registry) {
