@@ -18,13 +18,6 @@ A brief description of the Discord bot and what it does.
 - A purposeful project to learn TypeScript, and the Sapphire framework.
 - A project to fight with boredom.
 
-## TODO
-- **A help command.** (as well as many others)
-- **Image manipulation commands.**
-- **Code cleanup.**
-- **Optimization.**
-    - Getting rid of nesting.
-
 ## Used libraries
 - `Node.js`
 - `@discord.js`
