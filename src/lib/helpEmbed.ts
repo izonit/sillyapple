@@ -18,7 +18,8 @@ export const helpEmbed = new EmbedBuilder()
         { name: '`Ping`', value: `Get the bot ping | **Usage:** \`${defaultPrefix}ping\``, inline: false },
         { name: '`Help`', value: `Get help about the bot commands | **Usage:** \`${defaultPrefix}help\``, inline: false },
         { name: '`Info`', value: `Get the bot info | **Usage:** \`${defaultPrefix}info\``, inline: false },
-        { name: '`Wiki`', value: `Search the Wiki | **Usage:** \`${defaultPrefix}wiki <query>\``}
+        { name: '`Wiki`', value: `Search the Wiki | **Usage:** \`${defaultPrefix}wiki <query>\``},
+        { name: '`Meme`', value: `Get a random meme from **r/memes** | **Usage:** \`${defaultPrefix}meme\``},
       )
       .setFooter({ text: 'Params in <> are required, [] are optional' })
       .setColor('Aqua')
