@@ -13,8 +13,10 @@ export class ReadyListener extends Listener {
     if (this.container.client && this.container.client.user) {
       await new Promise(resolve => setTimeout(resolve,1550));
       // ^ Made because sometimes the message is sent inbetween application registry logs 
-      console.log(this.container.logger.info(`Successfully logged in as ${this.container.client.user.tag}.`));
-      console.log(this.container.logger.debug(`</> DEVELOPMENT`));
+      this.container.logger.info(`/=============================================================\\\n|           Successfully logged in as ${this.container.client.user.tag}        |`);
+      this.container.logger.info(`|                         </> DEVELOPMENT                     |\n\\=============================================================/`);
+	  
+	  // ^ my god, this formatting is insane... How did I even come up with this!?
     }
   }
 }
