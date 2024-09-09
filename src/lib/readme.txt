@@ -1,0 +1,1 @@
+Current directory (lib/) is a directory to keep reusable, or just too big variables, functions and arrays.
