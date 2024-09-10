@@ -20,6 +20,7 @@ export const helpEmbed = new EmbedBuilder()
         { name: '`Info`', value: `Get the bot info | **Usage:** \`${defaultPrefix}info\``, inline: false },
         { name: '`Wiki`', value: `Search the Wiki | **Usage:** \`${defaultPrefix}wiki <query>\``},
         { name: '`Meme`', value: `Get a random meme from **r/memes** | **Usage:** \`${defaultPrefix}meme\``},
+        { name: '`Minesweeper`', value: `Play minesweeper | **Usage:** \`${defaultPrefix}minesweeper <width> <height> <bombsCount>\` (**All params must be less than 11.**)`},
       )
       .setFooter({ text: 'Params in <> are required, [] are optional' })
       .setColor('Aqua')
