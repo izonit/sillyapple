@@ -1,5 +1,5 @@
 import { Command, Args } from '@sapphire/framework';
-import { Embed, EmbedBuilder, Message } from 'discord.js';
+import { EmbedBuilder, Message } from 'discord.js';
 import { emojis } from '../../lib/emojis.json'
 
 export class MinesweeperCommand extends Command {
@@ -73,7 +73,8 @@ export class MinesweeperCommand extends Command {
 
       return message.channel.send({ embeds: [embed] });
     } catch (error) {
-      return message.reply(`## :cold_sweat: Invalid parameters!\nAll arguments must be an integer, **less than 11**. Otherwise the command will throw an error.\n-# ${emojis.info} Correct usage: Apple, minesweeper <width> <height> <bombsCount>`);
+      message.reply(`## :cold_sweat: Invalid parameters!\nAll arguments must be an integer, **less than 11**. Otherwise the command will throw an error.\n-# ${emojis.info} Correct usage: Apple, minesweeper <width> <height> <bombsCount>`);
+      message.channel.send(`### Error message:\n||${error}||`);
     }
   }
 
