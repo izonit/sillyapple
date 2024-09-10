@@ -1,6 +1,10 @@
 {
   "emojis": {
     "loading": "<a:loading_emoji:1280466758473355357>",
-    "coinflip": "<a:coinflip:1279832197800656918>"
+    "coinflip": "<a:coinflip:1279832197800656918>",
+    "info": "<:info:1283066963504926782>"
+  },
+  "suns_and_moons": {
+
   }
 }
