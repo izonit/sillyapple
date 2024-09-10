@@ -1,4 +1,4 @@
-import { Command, Args } from '@sapphire/framework';
+import { Command } from '@sapphire/framework';
 import { EmbedBuilder, type Message} from 'discord.js';
 import { getRedditMeme } from '../../lib/reddit';
 
