@@ -10,6 +10,7 @@
   "author": "izonit",
   "license": "Unlicense",
   "dependencies": {
+    "@napi-rs/canvas": "^0.1.55",
     "@sapphire/discord.js-utilities": "^7.3.0",
     "@sapphire/framework": "^5.2.1",
     "@sapphire/plugin-logger": "^4.0.2",
