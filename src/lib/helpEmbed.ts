@@ -21,6 +21,9 @@ export const helpEmbed = new EmbedBuilder()
         { name: '`Wiki`', value: `Search the Wiki | **Usage:** \`${defaultPrefix}wiki <query>\``},
         { name: '`Meme`', value: `Get a random meme from **r/memes** | **Usage:** \`${defaultPrefix}meme\``},
         { name: '`Minesweeper`', value: `Play minesweeper | **Usage:** \`${defaultPrefix}minesweeper <width> <height> <bombsCount>\` (**All params must be less than 11.**)`},
+        { name: '`Ascii`', value: `Convert text to ASCII art | **Usage:** slash command version only`},
+        { name: '`Advancement`', value: `Generate an advancement image | **Usage:** slash command version only`},
+        { name: '`salt`', value: `Generate a salt overlay over an image | **Usage:** ${defaultPrefix}salt <Attachment>`},
       )
       .setFooter({ text: 'Params in <> are required, [] are optional' })
       .setColor('Aqua')
