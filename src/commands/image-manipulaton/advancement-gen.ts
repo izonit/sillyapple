@@ -37,8 +37,6 @@ export class AdvancementCommand extends Command {
   }
 
   public override async chatInputRun(interaction: Command.ChatInputCommandInteraction) {
-    interaction.deferReply();
-
     const block = interaction.options.getString('block')?.toString().trim().replace(/\s+/g, '..');
     const title = interaction.options.getString('title')?.toString().trim().replace(/\s+/g, '..');
     const field = interaction.options.getString('field')?.toString().trim().replace(/\s+/g, '..');
