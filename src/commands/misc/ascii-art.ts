@@ -1,5 +1,4 @@
-import { Command, type Args, ChatInputCommandAcceptedPayload, ChatInputCommand } from '@sapphire/framework';
-import { ChatInputApplicationCommandData, type Message } from 'discord.js';
+import { Command } from '@sapphire/framework';
 import axios from 'axios';
 
 export class AsciiCommand extends Command {
@@ -11,7 +10,7 @@ export class AsciiCommand extends Command {
     });
   }
 
-  public override registerApplicationCommands(registry: ChatInputCommand.Registry) {
+  public override registerApplicationCommands(registry: Command.Registry) {
     registry.registerChatInputCommand((builder) =>
       builder
         .setName(this.name)

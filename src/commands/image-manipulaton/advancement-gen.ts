@@ -1,5 +1,4 @@
 import { Command } from '@sapphire/framework';
-import { type CommandInteraction } from 'discord.js';
 import axios from 'axios';
 import { emojis } from '../../lib/emojis.json';
 
