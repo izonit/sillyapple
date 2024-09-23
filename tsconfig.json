@@ -7,14 +7,10 @@
     "strictNullChecks": true,
     "strictFunctionTypes": true,
     "resolveJsonModule": true,
-    "rootDir": "./src",
     "outDir": "./dist"
   },
   "exclude": [
     "./node_modules",
     "./**/node_modules/*"
   ],
-  "include": [
-    "./src/**/*",
-  ]
 }
