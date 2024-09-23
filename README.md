@@ -1,6 +1,6 @@
 <div align="center" width="200%" height="200%">
 
-![Logo](https://media.discordapp.net/attachments/1279789331602604095/1279791774415716525/SillyApple.png?ex=66d66338&is=66d511b8&hm=bd57cc2a50678c141f10abaa6230f00f0bb3a756072369bf694c3c79e23829d1&=&format=webp&quality=lossless&width=134&height=132)
+![Logo](https://github.com/izonit/sillyapple/blob/main/assets/sillyApple.png?raw=true)
 
 # Silly Apple
 
