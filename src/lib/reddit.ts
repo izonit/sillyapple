@@ -1,8 +1,12 @@
 import axios from 'axios';
-import { redditClientID, redditClientSecret, userAgent } from '../../config.json';
+import * as dotenv from 'dotenv';
+
+dotenv.config();
+
+const userAgent = process.env.USER_AGENT;
 
 export async function getRedditToken() {
-  const auth = Buffer.from(`${redditClientID}:${redditClientSecret}`).toString('base64');
+  const auth = Buffer.from(`${process.env.REDDIT_CLIENT_ID}:${process.env.REDDIT_CLIENT_SECRET}`).toString('base64');
     const response = await axios.post('https://www.reddit.com/api/v1/access_token', 
         'grant_type=client_credentials', {
         headers: {

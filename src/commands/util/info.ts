@@ -1,6 +1,8 @@
 import { Command } from '@sapphire/framework';
 import { EmbedBuilder, type Message } from 'discord.js';
-import { defaultPrefix } from '../../../config.json'
+import * as dotenv from 'dotenv';
+
+dotenv.config();
 
 export class InfoCommand extends Command {
   public constructor(context: Command.Context, options: Command.Options) {
@@ -38,7 +40,7 @@ export class InfoCommand extends Command {
         { name: 'Node version', value: `${process.version}`, inline: true },
         { name: 'Language' , value: 'TypeScript', inline: true },
         { name: 'GitHub repository', value: '[*click*](https://github.com/izonit/sillyapple)', inline: false },
-        { name: 'Prefix', value: `\`${defaultPrefix}\``, inline: false },  
+        { name: 'Prefix', value: `\`${process.env.DEFAULT_PREFIX}\``, inline: false },  
       )
       .setTimestamp()
       .setColor('Green')
@@ -63,7 +65,7 @@ export class InfoCommand extends Command {
         { name: 'Node version', value: `${process.version}`, inline: true },
         { name: 'Language' , value: 'TypeScript', inline: true },
         { name: 'GitHub repository', value: '[*click*](https://github.com/izonit/sillyapple)', inline: false },
-        { name: 'Prefix', value: `\`${defaultPrefix}\``, inline: false },  
+        { name: 'Prefix', value: `\`${process.env.DEFAULT_PREFIX}\``, inline: false },  
       )
       .setTimestamp()
       .setColor('Green')

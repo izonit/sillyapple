@@ -1,7 +1,9 @@
 import { SapphireClient, ApplicationCommandRegistries, LogLevel } from '@sapphire/framework';
 import { GatewayIntentBits } from 'discord.js';
-import { token, defaultPrefix } from '../config.json';
 import '@sapphire/plugin-logger/register'; // ~ Logger
+import * as dotenv from 'dotenv';
+
+dotenv.config()
 
 export const client = new SapphireClient({
   intents: [
@@ -30,9 +32,9 @@ export const client = new SapphireClient({
   },
 
   loadMessageCommandListeners: true,
-  defaultPrefix: defaultPrefix,
+  defaultPrefix: process.env.DEFAULT_PREFIX,
 });
 
 ApplicationCommandRegistries.setDefaultGuildIds(['1051056884335001620']);
 
-client.login(token);
+client.login(process.env.TOKEN);

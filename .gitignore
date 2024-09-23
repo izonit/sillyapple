@@ -6,3 +6,4 @@
 
 # Project secrets
 config.json
+.env
