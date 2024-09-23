@@ -3,7 +3,6 @@ Object.defineProperty(exports, "__esModule", { value: true });
 exports.client = void 0;
 const framework_1 = require("@sapphire/framework");
 const discord_js_1 = require("discord.js");
-require("@sapphire/plugin-logger/register"); // ~ Logger
 const dotenv = require("dotenv");
 dotenv.config();
 exports.client = new framework_1.SapphireClient({
@@ -23,9 +22,6 @@ exports.client = new framework_1.SapphireClient({
             },
         ],
         status: 'idle',
-    },
-    logger: {
-        level: framework_1.LogLevel.Debug
     },
     loadMessageCommandListeners: true,
     defaultPrefix: process.env.DEFAULT_PREFIX,

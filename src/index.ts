@@ -1,6 +1,5 @@
-import { SapphireClient, ApplicationCommandRegistries, LogLevel } from '@sapphire/framework';
+import { SapphireClient, ApplicationCommandRegistries } from '@sapphire/framework';
 import { GatewayIntentBits } from 'discord.js';
-import '@sapphire/plugin-logger/register'; // ~ Logger
 import * as dotenv from 'dotenv';
 
 dotenv.config()
@@ -25,10 +24,6 @@ export const client = new SapphireClient({
       ],
 
     status: 'idle',
-  },
-
-  logger: {
-    level: LogLevel.Debug
   },
 
   loadMessageCommandListeners: true,
