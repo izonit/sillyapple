@@ -1,6 +1,9 @@
 import { Command } from '@sapphire/framework';
 import { EmbedBuilder, type Message} from 'discord.js';
 import { getRedditMeme } from '../../lib/reddit';
+import * as dotenv from 'dotenv';
+
+dotenv.config()
 
 export class MemeCommand extends Command {
   public constructor(context: Command.Context, options: Command.Options) {

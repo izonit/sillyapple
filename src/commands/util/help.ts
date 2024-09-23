@@ -1,6 +1,9 @@
 import { Command } from '@sapphire/framework';
 import { type Message} from 'discord.js';
 import { helpEmbed } from '../../lib/helpEmbed';
+import * as dotenv from 'dotenv';
+
+dotenv.config();
 
 export class HelpCommand extends Command {
   public constructor(context: Command.Context, options: Command.Options) {
